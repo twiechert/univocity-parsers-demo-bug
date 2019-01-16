@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>de.twiechert</groupId>
+    <artifactId>parser-bug</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <tefde-bom.version>2.0-SNAPSHOT</tefde-bom.version>
+        <kafka.scala.version>2.11</kafka.scala.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <version.debezium>0.8.3.Final</version.debezium>
+        <version.awsSdk>1.11.310</version.awsSdk>
+        <version.jackson>2.8.8</version.jackson>
+        <version.univocity>2.7.6</version.univocity>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.univocity</groupId>
+            <artifactId>univocity-parsers</artifactId>
+            <version>${version.univocity}</version>
+            <type>jar</type>
+        </dependency>
+
+        <dependency>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
+        <scope>test</scope>
+    </dependency>
+
+
+
+    </dependencies>
+</project>
